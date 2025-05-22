@@ -13,7 +13,7 @@ body {
   font-family: 'Comic Neue', cursive;
   background-color: #f5f5f5;
   color: #000;
-  background-image: url('../Images/1334109.jpeg');
+  background-image: url('Images/1334109.jpeg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
