@@ -1,0 +1,39 @@
+body{
+    background-color: mediumseagreen;
+}
+
+h1{
+    color:rgb(0, 0, 0);
+    margin-left: 20px;
+}
+
+p{
+    font-family: Arial;
+}
+
+/*
+body{
+    background-image:url("https://grangers.co.uk/cdn/shop/articles/engin-akyurt-gJILnne_HFg-unsplash.jpg?v=1711643298");
+    background-repeat:no-repeat;
+    background-position:right top;
+    background-attachment:fixed;
+    background-size: cover;
+}
+*/
+
+body{
+    background:#e9d6ac url("https://grangers.co.uk/cdn/shop/articles/engin-akyurt-gJILnne_HFg-unsplash.jpg?v=1711643298") no-repeat right top
+}
+
+.dotted{
+    border:10px dotted linen;
+}
+
+.solid{
+    border:10px solid linen;
+}
+
+.dashed{
+    border:10px dashed linen;
+}
+
