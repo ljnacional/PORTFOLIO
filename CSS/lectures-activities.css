@@ -99,6 +99,11 @@ body::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('../Images/lecture.jpg');
+    /* Add these background properties */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .comic-panel::before,
