@@ -38,12 +38,12 @@ body::before {
 
 /* Page fade transition */
 #page-container {
-  opacity: 1;
-  transition: opacity 0.5s ease;
+	opacity: 1;
+	transition: opacity 0.5s ease;
 }
 
 #page-container.fade-out {
-  opacity: 0;
+	opacity: 0;
 }
 
 .main-content {
@@ -205,6 +205,28 @@ nav a:hover {
 	margin-bottom: 10px;
 	color: #000;
 	text-shadow: 2px 2px 0 white, 3px 3px 0 #333;
+}
+
+.social-links a {
+	color: black;
+	/* or any color that suits your theme */
+	margin: 0 10px;
+	font-size: 24px;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.social-links a:hover {
+	color: #1da1f2;
+	/* change color on hover */
+}
+
+.profile-description {
+	margin-top: 15px;
+	font-size: 1.05em;
+	line-height: 1.6;
+	max-width: 900px;
+	text-align: center;
 }
 
 /* Content Preview Panels */
