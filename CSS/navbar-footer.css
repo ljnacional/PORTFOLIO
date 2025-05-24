@@ -25,17 +25,6 @@ body {
     padding: 0;
 }
 
-/* Page transition */
-body.fade-out {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-body.fade-in {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
 body::before {
     content: '';
     position: fixed;
