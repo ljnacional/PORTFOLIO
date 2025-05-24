@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MidAct2List</title>
+    <style>
+        .upper-roman {
+            list-style-type: upper-roman;
+        }
+
+        .lower-roman {
+            list-style-type: lower-roman;
+        }
+
+        .sub-topic {
+            list-style-type: circle;
+        }  
+
+        .sub-topic2 li {
+            list-style-type: disc;
+        }
+        
+        .mini-topic {
+            list-style-type: square;
+        }
+
+    </style>
+</head>
+<body>
+    <h3> NACIONAL, LUKE JAN M.</h1>
+    <ol>
+        <li>Main Topic 1
+
+            <ol class="upper-roman">
+
+                <li>Topic 1</li>
+
+                <li>Topic 2
+                    <ul class="sub-topic">
+                        <li>Subtopic 1
+                            <ul class="mini-topic">
+                                <li>Mini Topic 1</li>
+                                <li>Mini Topic 2</li>
+                                <li>Mini Topic 3</li>
+                            </ul>
+                        </li>
+                        <li>Subtopic 2</li>
+                    </ul>
+                </li>
+
+                <li>Topic 3
+
+                    <ol class="lower-roman">
+                        <li>Subtopic 1</li>
+                        <li>Subtopic 2
+                            <ul class="sub-topic2">
+                                <li>Mini Topic 1</li>
+                                <li>Mini Topic 2</li>
+                            </ul>
+                        </li>
+                        <li>Subtopic 3</li>
+                    </ol>
+
+                </li>
+
+            </ol>
+
+        </li>
+        <li>Main Topic 2</li>
+
+        <li>Main Topic 3
+
+            <ul class="mini-topic">
+                <li>Mini Topic 1</li>
+                <li>Mini Topic 2</li>
+                <li>Mini Topic 3</li>
+            </ul>
+
+        </li>
+        
+    </ol>
+</body>
+</html>
