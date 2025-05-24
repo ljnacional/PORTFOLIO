@@ -72,6 +72,7 @@ h1, h2, h3 {
     padding: 0 10px;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%; /* Add this to ensure full width */
 }
 
 /* Comic Panel */
@@ -89,9 +90,11 @@ h1, h2, h3 {
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: inherit;
-    aspect-ratio: 4/3; /* This makes it perfectly square */
-    min-height: 250px; /* Minimum size */
+    aspect-ratio: 4/3;
+    height: 100%; /* Change from min-height to height */
+    width: 100%; /* Ensure full width of grid cell */
 }
+
 .comic-panel::before,
 .comic-panel::after {
     content: "";
