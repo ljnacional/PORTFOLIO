@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 2 | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Comic+Neue:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/navbar-footer.css" />
+    <link rel="stylesheet" href="../CSS/lecture.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-center">
+            <a href="../index.html">Home</a>
+            <a href="prelims.html" class="active">Prelims</a>
+            <a href="midterms.html">Midterms</a>
+            <a href="finals.html">Finals</a>
+        </div>
+    </nav>
+
+    <div id="page-container">
+        <div class="main-content">
+            <h1 class="manga-title">Lecture 2: HTML Structures</h1>
+
+            <div class="speech-panel">
+                <div class="speech-bubble">
+                    <p>Time to learn how websites are structured with HTML!</p>
+                </div>
+            </div>
+
+            <section class="comic-grid">
+
+                <div class="comic-panel content-preview">
+                    <h3>Tools for Web Devs</h3>
+                    <p>Essential tools: a computer, text editor (like VSCode), browser (Chrome/Firefox), version control
+                        (GitHub), and optional tools like FTP or Figma.</p>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Folder Structure</h3>
+                    <p>Your project folder should include:</p>
+                    <ul>
+                        <li><code>index.html</code> – main page</li>
+                        <li><code>images/</code> – image files</li>
+                        <li><code>styles/</code> – CSS files</li>
+                        <li><code>scripts/</code> – JavaScript files</li>
+                    </ul>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Basic HTML5 Structure</h3>
+                    <p>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang="en"&gt;<br>
+                        &nbsp;&nbsp;&lt;head&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+                        &nbsp;&nbsp;&lt;/head&gt;<br>
+                        &nbsp;&nbsp;&lt;body&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Page content here<br>
+                        &nbsp;&nbsp;&lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </p>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>HTML Elements</h3>
+                    <p>Everything in HTML is an element. Example:</p>
+                    <code>&lt;h1&gt;Welcome&lt;/h1&gt;</code>
+                    <p>Has an opening tag, content, and closing tag.</p>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Empty Elements</h3>
+                    <p>Some tags don’t wrap content. Example:</p>
+                    <code>&lt;br&gt;</code> – inserts a line break<br>
+                    <code>&lt;hr&gt;</code> – creates a horizontal rule
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Attributes and Values</h3>
+                    <p>Attributes go in opening tags to describe elements.</p>
+                    <code>&lt;p&gt;Centered text&lt;/p&gt;</code>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Nesting</h3>
+                    <p>Always properly nest tags. This is wrong:</p>
+                    <code>&lt;p&gt;&lt;h1&gt;Oops&lt;/p&gt;&lt;/h1&gt;</code><br>
+                    <p>Correct nesting avoids display issues.</p>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Semantic Tags</h3>
+                    <p>Give meaning to your layout:</p>
+                    <code>&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;</code>
+                    <p>Use instead of non-semantic <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code>.</p>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Comments</h3>
+                    <p>Add notes to your HTML:</p>
+                    <code>&lt;!-- This is a comment --&gt;</code><br>
+                    <p>Helpful for organizing and debugging.</p>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Text Formatting Tags</h3>
+                    <p>
+                        <code>&lt;b&gt;Bold&lt;/b&gt;</code><br>
+                        <code>&lt;strong&gt;Strong&lt;/strong&gt;</code><br>
+                        <code>&lt;i&gt;Italic&lt;/i&gt;</code><br>
+                        <code>&lt;em&gt;Emphasized&lt;/em&gt;</code>
+                    </p>
+                    <p>Use logical tags for better accessibility!</p>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>HTML Entities</h3>
+                    <p>Reserved characters need entities:</p>
+                    <code>&amp;lt;</code> = &lt;<br>
+                    <code>&amp;gt;</code> = &gt;<br>
+                    <code>&amp;amp;</code> = &<br>
+                    <code>&amp;copy;</code> = ©
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Preformatted & Code</h3>
+                    <p>
+                        Use <code>&lt;pre&gt;</code> for preformatted blocks and<br>
+                        <code>&lt;code&gt;</code> for inline code examples.
+                    </p>
+                    <p>
+                        Example:<br>
+                        &lt;pre&gt;<br>
+                        &nbsp;&nbsp;&lt;code&gt;let x = 10;&lt;/code&gt;<br>
+                        &lt;/pre&gt;
+                    </p>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Text Alignment</h3>
+                    <p>
+                        <code>&lt;p align="left"&gt;</code><br>
+                        <code>&lt;p align="center"&gt;</code><br>
+                        <code>&lt;p align="right"&gt;</code><br>
+                        <code>&lt;p align="justify"&gt;</code>
+                    </p>
+                    <p>Note: use CSS for modern alignment!</p>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Save & View</h3>
+                    <p>
+                        Save your HTML file as <code>.html</code> or <code>.htm</code><br>
+                        Open with a browser to preview your work!
+                    </p>
+                </div>
+
+                <a href="../lectures/Lecture2.html" target="_blank" class="comic-panel content-preview exercise-link">
+                    <h3>Lecture 2 - EXERCISE</h3>
+                    <p>HTML Structures</p>
+                </a>
+
+            </section>
+
+            <div class="speech-panel">
+                <div class="speech-bubble">
+                    <p>Awesome work! You’ve mastered HTML’s foundational structure!</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Luke Jan M. Nacional | Portfolio</p>
+        </footer>
+    </div>
+
+
+    <script src="../js/page-loader.js"></script>
+</body>
+
+</html>

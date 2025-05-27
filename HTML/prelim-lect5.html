@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 5 | HTML Tables</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Comic+Neue:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/navbar-footer.css" />
+    <link rel="stylesheet" href="../CSS/lecture.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-center">
+            <a href="../index.html">Home</a>
+            <a href="prelims.html" class="active">Prelims</a>
+            <a href="midterms.html">Midterms</a>
+            <a href="finals.html">Finals</a>
+        </div>
+    </nav>
+
+    <div id="page-container">
+        <div class="main-content">
+            <h1 class="manga-title">Lecture 5: HTML Tables</h1>
+
+            <div class="speech-panel">
+                <div class="speech-bubble">
+                    <p>Let's organize data with HTML tables!</p>
+                </div>
+            </div>
+
+            <section class="comic-grid">
+
+                <div class="comic-panel content-preview">
+                    <h3>Basic Table Structure</h3>
+                    <p>HTML tables are defined with the <code>&lt;table&gt;</code> tag:</p>
+                    <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                    <p><code>&lt;tr&gt;</code> = table row, <code>&lt;th&gt;</code> = table header,
+                        <code>&lt;td&gt;</code> = table data</p>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Table Borders</h3>
+                    <p>Add borders with CSS:</p>
+                    <pre><code>table, th, td {
+  border: 1px solid black;
+}</code></pre>
+                    <p>For collapsed borders:</p>
+                    <pre><code>table {
+  border-collapse: <br> collapse;
+}</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Table Styling</h3>
+                    <p>Cell padding and alignment:</p>
+                    <pre><code>th, td {
+  padding: 15px;
+  text-align: left;
+}</code></pre>
+                    <p>Border spacing (only works without collapsed borders):</p>
+                    <pre><code>table {
+  border-spacing: 5px;
+}</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Spanning Columns</h3>
+                    <p>Use <code>colspan</code> to merge cells horizontally:</p>
+                    <pre><code>&lt;tr&gt;
+  &lt;th colspan="2"&gt;<br>Merged Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;Data 1&lt;/td&gt;
+  &lt;td&gt;Data 2&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Spanning Rows</h3>
+                    <p>Use <code>rowspan</code> to merge cells vertically:</p>
+                    <pre><code>&lt;tr&gt;
+  &lt;th rowspan="2"&gt;Merged <br>&lt;/th&gt;
+  &lt;td&gt;Data 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;Data 2&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Complete Table Example</h3>
+                    <pre><code>&lt;table style="width:100%; <br>border-collapse: <br>collapse;"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th colspan="2"&gt;<br>Phone&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John Doe&lt;/td&gt;
+    &lt;td&gt;123-4567&lt;/td&gt;
+    &lt;td&gt;987-6543&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th rowspan="2"&gt;<br>Contacts&lt;/th&gt;
+    &lt;td&gt;Jane Smith&lt;/td&gt;
+    &lt;td&gt;555-1234&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Mike Johnson <br>&lt;/td&gt;
+    &lt;td&gt;555-5678&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Table Captions</h3>
+                    <p>Add a caption to describe your table:</p>
+                    <pre><code>&lt;table&gt;
+  &lt;caption&gt;<br>Monthly Sales&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Sales&lt;/th&gt;
+  &lt;/tr&gt;
+  ...
+&lt;/table&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Table Head, Body, Foot</h3>
+                    <p>Organize tables with semantic sections:</p>
+                    <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Header&lt;/th&gt;<br>&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;<br>&lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;&lt;td&gt;Footer&lt;/td&gt;<br>&lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Styling Tables</h3>
+                    <p>Use CSS to make tables more attractive:</p>
+                    <pre><code>table {
+  width: 100%;
+  border-collapse: <br> collapse;
+}
+th {
+  background-color: <br> #f2f2f2;
+}
+tr:nth-child(even) {
+  background-color: <br>#f9f9f9;
+}
+tr:hover {
+  background-color: <br>#e9e9e9;
+}</code></pre>
+                </div>
+
+                <a href="../lectures/Lecture5.html" target="_blank" class="comic-panel content-preview exercise-link">
+                    <h3>Lecture 5 - EXERCISE</h3>
+                    <p>HTML Tables</p>
+                </a>
+
+            </section>
+
+            <div class="speech-panel">
+                <div class="speech-bubble">
+                    <p>Great job! Now you can create organized, structured tables for your web pages!</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Luke Jan M. Nacional | Portfolio</p>
+        </footer>
+    </div>
+
+    <script src="../js/page-loader.js"></script>
+</body>
+
+</html>

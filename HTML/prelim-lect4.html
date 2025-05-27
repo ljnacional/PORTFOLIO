@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 4 | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Comic+Neue:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/navbar-footer.css" />
+    <link rel="stylesheet" href="../CSS/lecture.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-center">
+            <a href="../index.html">Home</a>
+            <a href="prelims.html" class="active">Prelims</a>
+            <a href="midterms.html">Midterms</a>
+            <a href="finals.html">Finals</a>
+        </div>
+    </nav>
+
+    <div id="page-container">
+        <div class="main-content">
+            <h1 class="manga-title">Lecture 4: CSS3 Fundamentals</h1>
+
+            <div class="speech-panel">
+                <div class="speech-bubble">
+                    <p>Let's unlock the power of CSS3 and bring your HTML to life!</p>
+                </div>
+            </div>
+
+            <section class="comic-grid">
+
+                <div class="comic-panel content-preview">
+                    <h3>What is CSS?</h3>
+                    <p>CSS stands for Cascading Style Sheets and controls the presentation of HTML elements.</p>
+                    <p>It separates content from design and allows styling to be reused across pages.</p>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>CSS Syntax</h3>
+                    <p>A CSS rule-set includes a selector and declarations.</p>
+                    <code>selector { property: value; }</code><br>
+                    <code>p { color: red; text-align: center; }</code>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>CSS Selectors</h3>
+                    <ul>
+                        <li><strong>Element selector</strong>: <code>p {}</code></li>
+                        <li><strong>ID selector</strong>: <code>#para1 {}</code></li>
+                        <li><strong>Class selector</strong>: <code>.center {}</code></li>
+                        <li><strong>Group selector</strong>: <code>h1, h2, p {}</code></li>
+                    </ul>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Three Ways to Insert CSS</h3>
+                    <ul>
+                        <li><strong>External</strong>: <code>&lt;link rel="stylesheet" href="style.css"&gt;</code></li>
+                        <li><strong>Internal</strong>: <code>&lt;style&gt; inside &lt;head&gt;</code></li>
+                        <li><strong>Inline</strong>: <code>&lt;h1 style="color:blue;"&gt;</code></li>
+                    </ul>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>CSS Comments</h3>
+                    <p>Used for documentation, ignored by browsers.</p>
+                    <code>/* This is a comment */</code>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>CSS Color Properties</h3>
+                    <ul>
+                        <li><code>color</code> – text color</li>
+                        <li><code>background-color</code> – background color</li>
+                        <li><code>border-color</code> – border color</li>
+                    </ul>
+                    <p><strong>Example:</strong></p>
+                    <code>&lt;h1 style="color:Tomato;"<br>&gt;Hello&lt;/h1&gt;</code>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Color Formats</h3>
+                    <ul>
+                        <li><code>rgb(255,0,0)</code></li>
+                        <li><code>#ff0000</code></li>
+                        <li><code>hsl(0, 100%, 50%)</code></li>
+                        <li><code>rgba(255,0,0,0.5)</code></li>
+                    </ul>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>CSS Background</h3>
+                    <ul>
+                        <li><code>background-color</code></li>
+                        <li><code>background-image</code></li>
+                        <li><code>background-repeat</code></li>
+                        <li><code>background-attachment</code></li>
+                        <li><code>background-position</code></li>
+                    </ul>
+                    <p><strong>Shorthand:</strong></p>
+                    <code>background: #fff url("img.jpg") no-repeat top right;</code>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>CSS Borders</h3>
+                    <p>Style your borders:</p>
+                    <ul>
+                        <li><code>border-style</code>: solid, dashed, dotted, double</li>
+                        <li><code>border-width</code>: thin, 5px, etc.</li>
+                        <li><code>border-color</code>: red, #ff0000, rgb(255,0,0)</li>
+                        <li><code>border-radius</code>: rounded corners</li>
+                    </ul>
+                    <code>p { border: 2px solid red; border-radius: 5px; }</code>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Height & Width</h3>
+                    <p>Set element dimensions:</p>
+                    <code>div { height: 100px; width: 50%; }</code><br>
+                    <code>div { max-width: 600px; }</code>
+                </div>
+
+                <a href="../lectures/Lecture4.html" target="_blank" class="comic-panel content-preview exercise-link">
+                    <h3>Lecture 4 - EXERCISE</h3>
+                    <p>CSS3 Basics and Styling</p>
+                </a>
+
+            </section>
+
+            <div class="speech-panel">
+                <div class="speech-bubble">
+                    <p>Awesome work! You now have the power to style your entire site with CSS!</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Luke Jan M. Nacional | Portfolio</p>
+        </footer>
+    </div>
+
+    <script src="../js/page-loader.js"></script>
+</body>
+
+</html>

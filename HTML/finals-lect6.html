@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 6 | Forms & Multimedia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Comic+Neue:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/navbar-footer.css" />
+    <link rel="stylesheet" href="../CSS/lecture.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-center">
+            <a href="../index.html">Home</a>
+            <a href="prelims.html">Prelims</a>
+            <a href="midterms.html">Midterms</a>
+            <a href="finals.html" class="active">Finals</a>
+        </div>
+    </nav>
+
+    <div id="page-container">
+        <div class="main-content">
+            <h1 class="manga-title">Lecture 6: Forms & Multimedia</h1>
+
+            <div class="speech-panel">
+                <div class="speech-bubble">
+                    <p>Let's create interactive forms and add multimedia to our web pages!</p>
+                </div>
+            </div>
+
+            <section class="comic-grid">
+
+                <div class="comic-panel content-preview">
+                    <h3>Form Basics</h3>
+                    <p>The <code>&lt;form&gt;</code> element creates interactive controls:</p>
+                    <pre><code>&lt;form action="/submit"<br> method="post"&gt;
+  &lt;!-- Form controls <br> go here --&gt;
+&lt;/form&gt;</code></pre>
+                    <p>Key attributes:</p>
+                    <ul>
+                        <li><code>action</code> - Where to send form data</li>
+                        <li><code>method</code> - HTTP method (GET/POST)</li>
+                    </ul>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Text Input</h3>
+                    <p>Basic text input fields:</p>
+                    <pre><code>&lt;label for="name"&gt;<br>Name:&lt;/label&gt;
+&lt;input type="text" <br>id="name" 
+       name="name" <br>required&gt;</code></pre>
+                    <p>Common attributes:</p>
+                    <ul>
+                        <li><code>placeholder</code> - Hint text</li>
+                        <li><code>required</code> - Mandatory field</li>
+                        <li><code>maxlength</code> - Character limit</li>
+                    </ul>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Radio & Checkboxes</h3>
+                    <p>Single selection (radio buttons):</p>
+                    <pre><code>&lt;input type="radio" <br>id="male" 
+       name="gender" <br> value="male"&gt;
+&lt;label for="male"&gt;<br>Male&lt;/label&gt;</code></pre>
+                    <p>Multiple selection (checkboxes):</p>
+                    <pre><code>&lt;input type="checkbox" <br> id="bike" 
+       name="vehicle" <br>value="bike"&gt;
+&lt;label for="bike"&gt;<br>Bike&lt;/label&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Dropdowns</h3>
+                    <p>Select elements for dropdown lists:</p>
+                    <pre><code>&lt;label for="cars"&gt;<br>Choose a car:&lt;<br>/label&gt;
+&lt;select id="cars" <br> name="cars"&gt;
+  &lt;option value="volvo"&gt;<br>Volvo&lt;/option&gt;
+  &lt;option value="saab"&gt;<br>Saab&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                    <p>For multiple selections:</p>
+                    <pre><code>&lt;select multiple <br>size="3"&gt;
+  &lt;!-- options --&gt;
+&lt;/select&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Text Areas</h3>
+                    <p>Multi-line text input:</p>
+                    <pre><code>&lt;label for="message"&gt;<br>Message:&lt;/label&gt;
+&lt;textarea id="message" <br>name="message" <br>rows="4" cols="50"&gt;
+&lt;/textarea&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Buttons</h3>
+                    <p>Submit and reset buttons:</p>
+                    <pre><code>&lt;input type="submit" <br>value="Submit"&gt;
+&lt;input type="reset" <br>value="Reset"&gt;</code></pre>
+                    <p>Regular button with JavaScript:</p>
+                    <pre><code>&lt;button type="button" <br>onclick="alert('Hello!')"&gt;
+  Click Me
+&lt;/button&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>HTML5 Input Types</h3>
+                    <p>Modern input types:</p>
+                    <ul>
+                        <li><code>email</code> - Email validation</li>
+                        <li><code>date</code> - Date picker</li>
+                        <li><code>color</code> - Color picker</li>
+                        <li><code>range</code> - Slider control</li>
+                    </ul>
+                    <pre><code>&lt;input type="date" <br>id="birthday" <br>name="birthday"&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Fieldset & Legend</h3>
+                    <p>Group related form elements:</p>
+                    <pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;Personal Info:&lt;<br>/legend&gt;
+  &lt;!-- Form controls --&gt;
+&lt;/fieldset&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Audio Element</h3>
+                    <p>Embed audio in HTML5:</p>
+                    <pre><code>&lt;audio controls&gt;
+&lt;source <br>src="sound.mp3" <br>type="audio/mpeg"&gt;
+  Your browser <br> doesn't support audio.
+&lt;/audio&gt;</code></pre>
+                    <p>Supported formats: MP3, WAV, OGG</p>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Video Element</h3>
+                    <p>Embed video in HTML5:</p>
+                    <pre><code>&lt;video width="320" <br>height="240" controls&gt;
+  &lt;source <br>src="movie.mp4" <br>type="video/mp4"&gt;
+  Your browser <br>doesn't support video.
+&lt;/video&gt;</code></pre>
+                    <p>Supported formats: MP4, WebM, Ogg</p>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Embedding Content</h3>
+                    <p>Using iframe for external content:</p>
+                    <pre><code>&lt;iframe <br>width="560" height="315" <br>src="https://www.youtube<br>.com<br>/embed/<br>dQw4w9WgXcQ" 
+  frameborder="0" <br>allowfullscreen&gt;
+&lt;/iframe&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Form Best Practices</h3>
+                    <ul>
+                        <li>Always use <code>&lt;label&gt;</code> elements</li>
+                        <li>Group related fields with <code>&lt;fieldset&gt;</code></li>
+                        <li>Use appropriate input types</li>
+                        <li>Mark required fields clearly</li>
+                        <li>Provide clear error messages</li>
+                    </ul>
+                </div>
+
+                <a href="../lectures/Lecture6.html" target="_blank" class="comic-panel content-preview exercise-link">
+                    <h3>Lecture 6 - EXERCISE</h3>
+                    <p>Forms & Multimedia</p>
+                </a>
+
+            </section>
+
+            <div class="speech-panel">
+                <div class="speech-bubble">
+                    <p>Great job! Now you can create interactive forms and add multimedia to your websites!</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Luke Jan M. Nacional | Portfolio</p>
+        </footer>
+    </div>
+
+    <script src="../js/page-loader.js"></script>
+</body>
+
+</html>

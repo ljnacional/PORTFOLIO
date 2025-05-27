@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture | Lists, Links & Images</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Comic+Neue:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/navbar-footer.css" />
+    <link rel="stylesheet" href="../CSS/lecture.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-center">
+            <a href="../index.html">Home</a>
+            <a href="prelims.html">Prelims</a>
+            <a href="midterms.html" class="active">Midterms</a>
+            <a href="finals.html">Finals</a>
+        </div>
+    </nav>
+
+    <div id="page-container">
+        <div class="main-content">
+            <h1 class="manga-title">Lecture: Lists, Links & Images</h1>
+
+            <div class="speech-panel">
+                <div class="speech-bubble">
+                    <p>Let's organize content with lists and connect the web with links and images!</p>
+                </div>
+            </div>
+
+            <section class="comic-grid">
+
+                <div class="comic-panel content-preview">
+                    <h3>Ordered Lists</h3>
+                    <p>Numbered lists for ordered items:</p>
+                    <pre><code>&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    <p>Customize numbering with CSS:</p>
+                    <pre><code>ol {
+  list-style-type: <br>upper-roman;
+}</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Unordered Lists</h3>
+                    <p>Bulleted lists for items without order:</p>
+                    <pre><code>&lt;ul&gt;
+  &lt;li&gt;Apples&lt;/li&gt;
+  &lt;li&gt;Bananas&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    <p>Change bullet style:</p>
+                    <pre><code>ul {
+  list-style-type: square;
+}</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Definition Lists</h3>
+                    <p>For terms and their definitions:</p>
+                    <pre><code>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;HyperText Markup <br>Language&lt;/dd&gt;
+  &lt;dt&gt;CSS&lt;/dt&gt;
+  &lt;dd&gt;Cascading Style <br>Sheets&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Nested Lists</h3>
+                    <p>Lists within lists for hierarchy:</p>
+                    <pre><code>&lt;ul&gt;
+  &lt;li&gt;Fruits
+&lt;ul&gt;
+    &lt;li&gt;Apples <br>&lt;/li&gt;
+      &lt;li&gt;Oranges&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Vegetables&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Horizontal Lists</h3>
+                    <p>Create navigation menus:</p>
+                    <pre><code>ul.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.horizontal {
+  float: left;
+}
+
+li.horizontal a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Basic Links</h3>
+                    <p>The anchor tag creates hyperlinks:</p>
+                    <pre><code>&lt;a href="https: <br>//example.com"&gt;<br>Visit Example&lt;/a&gt;</code></pre>
+                    <p>Link targets:</p>
+                    <pre><code>&lt;a href="page.html" <br> target="_blank"&gt;<br>Opens in new tab&lt;/a&gt;
+&lt;a href="#section-id"&gt;<br>Jumps to section&lt;/a&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Absolute vs Relative Links</h3>
+                    <p>Absolute links to other websites:</p>
+                    <pre><code>&lt;a <br>href="https://google.com"&gt;<br>Google&lt;/a&gt;</code></pre>
+                    <p>Relative links within your site:</p>
+                    <pre><code>&lt;a href="about.html"&gt; <br>About Us&lt;/a&gt;
+&lt;a href="../contact.html"&gt; <br>Contact&lt;/a&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Link States</h3>
+                    <p>Style different link states:</p>
+                    <pre><code>/* Unvisited link */
+a:link {
+  color: blue;
+}
+
+/* Visited link */
+a:visited {
+  color: purple;
+}
+
+/* Mouse over link */
+a:hover {
+  color: red;
+}
+
+/* Selected link */
+a:active {
+  color: green;
+}</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Basic Images</h3>
+                    <p>The img tag displays images:</p>
+                    <pre><code>&lt;img src="photo.jpg" <br> alt="Description"&gt;</code></pre>
+                    <p>Set image size:</p>
+                    <pre><code>&lt;img src="logo.png" <br>alt="Logo" 
+     style="width:200px;<br>height:100px;"&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Image Formats</h3>
+                    <p>Common web image formats:</p>
+                    <ul>
+                        <li><strong>JPEG</strong> - Best for photos</li>
+                        <li><strong>PNG</strong> - Best for transparency</li>
+                        <li><strong>GIF</strong> - Best for animations</li>
+                        <li><strong>WebP</strong> - Modern efficient format</li>
+                    </ul>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Image Links</h3>
+                    <p>Make images clickable:</p>
+                    <pre><code>&lt;a href="gallery.html"&gt;
+  &lt;img src="thumbnail.jpg" <br>alt="Gallery"&gt;
+&lt;/a&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Image Maps</h3>
+                    <p>Create clickable areas on images:</p>
+                    <pre><code>&lt;img src="planets.jpg" <br>alt="Planets" <br>usemap="#planetmap"&gt;
+
+&lt;map name="planetmap"&gt;
+  &lt;area shape="rect" <br>coords="0,0,82,126" 
+        href="sun.html" <br>alt="Sun"&gt;
+  <br>&lt;area shape="circle" <br>coords="90,58,3" 
+        <br>href="mercury.html" <br>alt="Mercury"&gt;
+&lt;/map&gt;</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Background Images</h3>
+                    <p>Add images to elements:</p>
+                    <pre><code>body {
+  background-image: <br>url("bg.jpg");
+  background-repeat: <br> no-repeat;
+  background-size: cover;
+}</code></pre>
+                </div>
+
+                <div class="comic-panel content-preview">
+                    <h3>Floating Images</h3>
+                    <p>Wrap text around images:</p>
+                    <pre><code>&lt;img src="cat.jpg" <br>style="float:left; <br> margin:10px;"&gt;
+&lt;p&gt;Text wraps <br>around the image...&lt;/p&gt;</code></pre>
+                </div>
+
+            </section>
+
+            <div class="speech-panel">
+                <div class="speech-bubble">
+                    <p>Fantastic! Now you can organize content with lists and connect the web with links and images!</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Luke Jan M. Nacional | Portfolio</p>
+        </footer>
+    </div>
+
+    <script src="../js/page-loader.js"></script>
+</body>
+
+</html>
